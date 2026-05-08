@@ -40,7 +40,7 @@ export default function Contact() {
     setErrorMsg('')
 
     try {
-      const res = await fetch('https://markanthonyrivas-contact.mark-anthony-rivas89.workers.dev', {
+      const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
