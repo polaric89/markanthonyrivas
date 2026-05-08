@@ -1,0 +1,4 @@
+# Pages project config — send_email not supported here, handled by email-worker
+name = "markanthonyrivas"
+pages_build_output_dir = "out"
+compatibility_date = "2024-01-01"

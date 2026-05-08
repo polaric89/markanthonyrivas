@@ -1,0 +1,12 @@
+name = "markanthonyrivas-contact"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+routes = [
+  { pattern = "api.markanthonyrivas.site/contact", zone_name = "markanthonyrivas.site" }
+]
+
+[[send_email]]
+name = "SEND_EMAIL"
+destination_address = "mark.anthony.rivas89@gmail.com"
