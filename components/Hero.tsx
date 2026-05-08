@@ -93,9 +93,8 @@ export default function Hero() {
             </svg>
           </a>
           <a
-            href="/cv.html"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/cv.pdf"
+            download="Mark-Anthony-Rivas-CV.pdf"
             className="px-8 py-3.5 rounded-xl border border-white/10 text-slate-300 font-heading font-semibold text-sm hover:bg-white/[0.05] hover:border-white/20 hover:text-white transition-all duration-200 active:scale-[0.97] inline-flex items-center gap-2"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
