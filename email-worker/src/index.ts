@@ -13,13 +13,17 @@ interface ContactPayload {
   message: string
 }
 
-const ALLOWED = new Set([
-  'https://markanthonyrivas.site',
-  'https://markanthonyrivas.pages.dev',
-])
+function isAllowed(origin: string | null): boolean {
+  if (!origin) return false
+  return (
+    origin === 'https://markanthonyrivas.site' ||
+    origin.endsWith('.markanthonyrivas.pages.dev') ||
+    origin === 'https://markanthonyrivas.pages.dev'
+  )
+}
 
 function getCORS(origin: string | null) {
-  const allow = origin && ALLOWED.has(origin) ? origin : 'https://markanthonyrivas.site'
+  const allow = isAllowed(origin) ? origin! : 'https://markanthonyrivas.site'
   return {
     'Access-Control-Allow-Origin': allow,
     'Access-Control-Allow-Methods': 'POST, OPTIONS',
