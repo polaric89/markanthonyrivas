@@ -1,4 +1,4 @@
-export type Category = 'all' | 'wordpress' | 'shopify' | 'react' | 'web3'
+export type Category = 'all' | 'wordpress' | 'shopify' | 'react' | 'web3' | 'mobile'
 
 export interface Project {
   name: string
@@ -11,6 +11,7 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+  // ── Ongoing (pinned to top) ──────────────────────────────────────────────
   {
     name: 'IPO Genie',
     url: 'https://ipogenie.ai/',
@@ -21,12 +22,32 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    name: 'Squire',
+    url: 'https://www.squire.com/',
+    desc: 'Accounting firm corporate website — ongoing CMS & feature development',
+    tools: 'WordPress, ACF, Underscore',
+    days: 'Ongoing',
+    categories: ['wordpress'],
+    featured: true,
+  },
+  {
+    name: 'Squire Technology',
+    url: 'https://www.squiretechnology.com/',
+    desc: 'Technology division of Squire accounting firm — ongoing development & maintenance',
+    tools: 'WordPress, ACF, Underscore',
+    days: 'Ongoing',
+    categories: ['wordpress'],
+    featured: true,
+  },
+
+  // ── Completed ────────────────────────────────────────────────────────────
+  {
     name: 'XFlame Casino Platforms',
     url: 'https://www.sut88.com/',
-    desc: 'Enterprise-scale casino platform suite — 6 live products (sut88, dv88, pub88, lu88, soi.bet, hbet.win)',
-    tools: 'Next.js, TypeScript, Tailwind CSS',
+    desc: 'Enterprise casino suite — 6 live web platforms + React Native mobile app with shared component library',
+    tools: 'Next.js, React Native, TypeScript, Tailwind CSS',
     days: 240,
-    categories: ['react'],
+    categories: ['react', 'mobile'],
     featured: true,
   },
   {
@@ -157,14 +178,6 @@ export const projects: Project[] = [
     desc: 'Freight & logistics services website — fast, mobile-first build',
     tools: 'WordPress, Elementor, WpForms',
     days: 10,
-    categories: ['wordpress'],
-  },
-  {
-    name: 'Squire',
-    url: 'https://www.squire.com/',
-    desc: 'Accounting firm corporate website — ongoing CMS & feature development',
-    tools: 'WordPress, ACF, Underscore',
-    days: 'Ongoing',
     categories: ['wordpress'],
   },
   {

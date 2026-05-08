@@ -9,10 +9,12 @@ const filters: { label: string; value: Category }[] = [
   { label: 'Shopify', value: 'shopify' },
   { label: 'React / Next.js', value: 'react' },
   { label: 'Web3', value: 'web3' },
+  { label: 'Mobile', value: 'mobile' },
 ]
 
 const toolColor = (tool: string) => {
   const t = tool.toLowerCase()
+  if (t.includes('react native')) return 'text-pink-400 bg-pink-500/8 border-pink-500/15'
   if (t.includes('next') || t.includes('react')) return 'text-[#00d4ff] bg-[#00d4ff]/8 border-[#00d4ff]/15'
   if (t.includes('solidity') || t.includes('wagmi') || t.includes('web3')) return 'text-purple-400 bg-purple-500/8 border-purple-500/15'
   if (t.includes('typescript') || t.includes('node')) return 'text-blue-400 bg-blue-500/8 border-blue-500/15'
