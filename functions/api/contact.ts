@@ -83,7 +83,7 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        from: 'Portfolio Contact <contact.me@markanthonyrivas.site>',
+        from: 'Portfolio Contact <onboarding@resend.dev>',
         to: ['mark.anthony.rivas89@gmail.com'],
         reply_to: email,
         subject,
