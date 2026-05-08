@@ -15,6 +15,9 @@ const filters: { label: string; value: Category }[] = [
 const toolColor = (tool: string) => {
   const t = tool.toLowerCase()
   if (t.includes('react native')) return 'text-pink-400 bg-pink-500/8 border-pink-500/15'
+  if (t.includes('flutter')) return 'text-sky-400 bg-sky-500/8 border-sky-500/15'
+  if (t.includes('nativescript')) return 'text-lime-400 bg-lime-500/8 border-lime-500/15'
+  if (t.includes('firebase')) return 'text-amber-400 bg-amber-500/8 border-amber-500/15'
   if (t.includes('next') || t.includes('react')) return 'text-[#00d4ff] bg-[#00d4ff]/8 border-[#00d4ff]/15'
   if (t.includes('solidity') || t.includes('wagmi') || t.includes('web3')) return 'text-purple-400 bg-purple-500/8 border-purple-500/15'
   if (t.includes('typescript') || t.includes('node')) return 'text-blue-400 bg-blue-500/8 border-blue-500/15'
@@ -22,6 +25,7 @@ const toolColor = (tool: string) => {
   if (t.includes('shopify')) return 'text-emerald-400 bg-emerald-500/8 border-emerald-500/15'
   if (t.includes('wordpress') || t.includes('woocommerce')) return 'text-indigo-300 bg-indigo-500/8 border-indigo-500/15'
   if (t.includes('aws') || t.includes('docker')) return 'text-orange-400 bg-orange-500/8 border-orange-500/15'
+  if (t.includes('mssql') || t.includes('firebase')) return 'text-rose-400 bg-rose-500/8 border-rose-500/15'
   return 'text-slate-400 bg-white/[0.04] border-white/[0.08]'
 }
 

@@ -40,6 +40,50 @@ export const projects: Project[] = [
     featured: true,
   },
 
+  // ── Mobile Apps ─────────────────────────────────────────────────────────
+  {
+    name: 'JET.UA',
+    url: 'https://play.google.com/store/apps/details?id=com.jetscooters',
+    desc: 'Scooter rental mobile service app — full-stack build with real-time GPS tracking and payments',
+    tools: 'React Native, TypeScript, Node.js, AWS, MSSQL, JavaScript',
+    days: 270,
+    categories: ['mobile', 'react'],
+    featured: true,
+  },
+  {
+    name: 'Swappo',
+    url: 'https://play.google.com/store/apps/details?id=com.swappo.app',
+    desc: 'Mobile marketplace swap app — cross-platform build with real-time chat and Firebase backend',
+    tools: 'Flutter, React Native, Node.js, Firebase, Figma',
+    days: 300,
+    categories: ['mobile'],
+    featured: true,
+  },
+  {
+    name: 'e-gree',
+    url: 'https://play.google.com/store/apps/details?id=com.egree',
+    desc: 'Mobile agreement & contract signing app — multi-framework cross-platform delivery',
+    tools: 'NativeScript, Flutter, React Native, React.js, HTML',
+    days: 240,
+    categories: ['mobile', 'react'],
+  },
+  {
+    name: 'Tap App',
+    url: 'https://play.google.com/store/apps/details?id=com.tapapp.rex',
+    desc: 'Hybrid cross-platform mobile service app — no-code/low-code pipeline with custom Node.js backend',
+    tools: 'Flutter Flow, App Sheet, Node.js, JavaScript, Hybrid Cross Platform',
+    days: 240,
+    categories: ['mobile'],
+  },
+  {
+    name: 'c24 Scooters',
+    url: 'https://play.google.com/store/apps/details?id=com.c24.scooters',
+    desc: 'Scooter sharing mobile app — React Native build with Node.js API and live fleet management',
+    tools: 'React Native, Node.js, JavaScript',
+    days: 240,
+    categories: ['mobile', 'react'],
+  },
+
   // ── Completed ────────────────────────────────────────────────────────────
   {
     name: 'XFlame Casino Platforms',
