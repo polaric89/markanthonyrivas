@@ -13,28 +13,15 @@ interface ContactPayload {
   message: string
 }
 
-function isAllowed(origin: string | null): boolean {
-  if (!origin) return false
-  return (
-    origin === 'https://markanthonyrivas.site' ||
-    origin.endsWith('.markanthonyrivas.pages.dev') ||
-    origin === 'https://markanthonyrivas.pages.dev'
-  )
+const CORS = {
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Methods': 'POST, OPTIONS',
+  'Access-Control-Allow-Headers': 'Content-Type',
+  'Content-Type': 'application/json',
 }
 
-function getCORS(origin: string | null) {
-  const allow = isAllowed(origin) ? origin! : 'https://markanthonyrivas.site'
-  return {
-    'Access-Control-Allow-Origin': allow,
-    'Access-Control-Allow-Methods': 'POST, OPTIONS',
-    'Access-Control-Allow-Headers': 'Content-Type',
-    'Vary': 'Origin',
-    'Content-Type': 'application/json',
-  }
-}
-
-function respond(data: unknown, status = 200, origin?: string | null) {
-  return new Response(JSON.stringify(data), { status, headers: getCORS(origin ?? null) })
+function respond(data: unknown, status = 200) {
+  return new Response(JSON.stringify(data), { status, headers: CORS })
 }
 
 function buildMime(from: string, to: string, subject: string, html: string): string {
@@ -100,20 +87,18 @@ function buildHtml(p: ContactPayload): string {
 
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
-    const origin = request.headers.get('Origin')
-    const cors = getCORS(origin)
-    if (request.method === 'OPTIONS') return new Response(null, { status: 204, headers: cors })
-    if (request.method !== 'POST') return respond({ error: 'Method not allowed' }, 405, origin)
+    if (request.method === 'OPTIONS') return new Response(null, { status: 204, headers: CORS })
+    if (request.method !== 'POST') return respond({ error: 'Method not allowed' }, 405)
 
     let payload: ContactPayload
     try { payload = await request.json() as ContactPayload }
-    catch { return respond({ error: 'Invalid JSON' }, 400, origin) }
+    catch { return respond({ error: 'Invalid JSON' }, 400) }
 
     const { name, email, message } = payload
     if (!name?.trim() || !email?.trim() || !message?.trim())
-      return respond({ error: 'Name, email, and message are required.' }, 400, origin)
+      return respond({ error: 'Name, email, and message are required.' }, 400)
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))
-      return respond({ error: 'Invalid email address.' }, 400, origin)
+      return respond({ error: 'Invalid email address.' }, 400)
 
     const FROM = 'noreply@markanthonyrivas.site'
     const TO = 'mark.anthony.rivas89@gmail.com'
@@ -123,10 +108,10 @@ export default {
       const raw = buildMime(FROM, TO, subject, buildHtml(payload))
       const msg = new EmailMessage(FROM, TO, raw)
       await env.SEND_EMAIL.send(msg)
-      return respond({ success: true }, 200, origin)
+      return respond({ success: true })
     } catch (err) {
       console.error(err)
-      return respond({ error: 'Failed to send. Please email directly.' }, 500, origin)
+      return respond({ error: 'Failed to send. Please email directly.' }, 500)
     }
   },
 }
