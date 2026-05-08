@@ -57,8 +57,9 @@ export default function Navbar() {
 
         <div className="hidden md:flex items-center gap-3">
           <a
-            href="/cv.pdf"
-            download
+            href="/cv.html"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-xs px-4 py-2 rounded-lg border border-[#00d4ff]/25 text-[#00d4ff] hover:bg-[#00d4ff]/10 hover:border-[#00d4ff]/50 transition-all duration-200 font-medium tracking-wide"
           >
             Download CV
@@ -99,8 +100,9 @@ export default function Navbar() {
               ))}
               <li>
                 <a
-                  href="/cv.pdf"
-                  download
+                  href="/cv.html"
+            target="_blank"
+            rel="noopener noreferrer"
                   className="text-xs text-[#00d4ff] border border-[#00d4ff]/25 px-4 py-2 rounded-lg inline-block hover:bg-[#00d4ff]/10 transition-colors"
                 >
                   Download CV
