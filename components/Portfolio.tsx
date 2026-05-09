@@ -27,6 +27,8 @@ const toolColor = (tool: string) => {
   if (t.includes('wordpress') || t.includes('woocommerce')) return 'text-indigo-300 bg-indigo-500/8 border-indigo-500/15'
   if (t.includes('aws') || t.includes('docker')) return 'text-orange-400 bg-orange-500/8 border-orange-500/15'
   if (t.includes('mssql')) return 'text-rose-400 bg-rose-500/8 border-rose-500/15'
+  if (t.includes('gohighlevel') || t.includes('highlevel')) return 'text-orange-300 bg-orange-400/8 border-orange-400/15'
+  if (t.includes('sharepoint')) return 'text-blue-300 bg-blue-400/8 border-blue-400/15'
   return 'text-slate-400 bg-white/[0.04] border-white/[0.08]'
 }
 

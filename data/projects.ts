@@ -86,6 +86,15 @@ export const projects: Project[] = [
 
   // ── Completed ────────────────────────────────────────────────────────────
   {
+    name: 'Brant Connects',
+    url: 'https://www.brantconnects.com/',
+    desc: 'Professional networking & connections platform for Brant and Associates — CRM-driven site with lead capture and automation',
+    tools: 'GoHighLevel, SharePoint, JavaScript',
+    days: 45,
+    categories: ['sharepoint'],
+    featured: true,
+  },
+  {
     name: 'Estar Education',
     url: 'https://estareducation.com/',
     desc: 'Education & apprenticeship provider — full site with course listings, events, WooCommerce payments, and advanced forms',
