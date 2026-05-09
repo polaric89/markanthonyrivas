@@ -1,4 +1,4 @@
-export type Category = 'all' | 'wordpress' | 'shopify' | 'react' | 'web3' | 'mobile'
+export type Category = 'all' | 'wordpress' | 'shopify' | 'react' | 'web3' | 'mobile' | 'sharepoint'
 
 export interface Project {
   name: string
@@ -85,6 +85,15 @@ export const projects: Project[] = [
   },
 
   // ── Completed ────────────────────────────────────────────────────────────
+  {
+    name: 'Estar Education',
+    url: 'https://estareducation.com/',
+    desc: 'Education & apprenticeship provider — full site with course listings, events, WooCommerce payments, and advanced forms',
+    tools: 'WordPress, Elementor Pro, WooCommerce, SharePoint',
+    days: 45,
+    categories: ['wordpress', 'sharepoint'],
+    featured: true,
+  },
   {
     name: 'XFlame Casino Platforms',
     url: 'https://www.sut88.com/',

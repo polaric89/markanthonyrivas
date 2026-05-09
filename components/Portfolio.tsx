@@ -10,6 +10,7 @@ const filters: { label: string; value: Category }[] = [
   { label: 'React / Next.js', value: 'react' },
   { label: 'Web3', value: 'web3' },
   { label: 'Mobile', value: 'mobile' },
+  { label: 'SharePoint', value: 'sharepoint' },
 ]
 
 const toolColor = (tool: string) => {
