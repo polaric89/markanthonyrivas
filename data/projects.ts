@@ -13,6 +13,15 @@ export interface Project {
 export const projects: Project[] = [
   // ── Ongoing (pinned to top) ──────────────────────────────────────────────
   {
+    name: 'Thailand Finds',
+    url: 'https://thailandfinds.com',
+    desc: 'Travel & discovery platform for Thailand — content-driven Next.js build',
+    tools: 'Next.js, TypeScript, Tailwind CSS',
+    days: 'Ongoing',
+    categories: ['react'],
+    featured: true,
+  },
+  {
     name: 'IPO Genie',
     url: 'https://ipogenie.ai/',
     desc: 'Blockchain & Crypto Web3 dApp — wallet integrations, smart contracts, on-chain data APIs',

@@ -4,6 +4,20 @@ import { useRef } from 'react'
 
 const experiences = [
   {
+    company: 'Squire',
+    role: 'Senior Software Engineer (Independent Contractor)',
+    period: 'Jan 2026 – Present',
+    type: 'Current',
+    color: '#f472b6',
+    bullets: [
+      'Design, develop, and maintain NetSuite customizations using SuiteScript 2.x (user event, scheduled, map/reduce, RESTlet, and Suitelet scripts), workflows, saved searches, and custom records.',
+      'Build and integrate NetSuite with internal and third-party systems via SuiteTalk (REST/SOAP) and RESTlets.',
+      'Develop responsive, performant front-end applications using Vue.js (Vue 3, Composition API, Pinia/Vuex) and modern tooling (Vite, TypeScript).',
+      'Architect and deploy cloud services on Microsoft Azure (App Service, Functions, Logic Apps, Service Bus, Azure SQL, Key Vault, Blob Storage), with CI/CD pipelines via Azure DevOps and GitHub Actions.',
+      'Translate business requirements into scalable technical designs, mentor junior engineers, and collaborate with product, operations, and finance stakeholders.',
+    ],
+  },
+  {
     company: 'Steel Spear Media-FZCO',
     role: 'Senior Full-Stack Developer (Web3 Freelance)',
     period: 'Dec 2025 – Present',
