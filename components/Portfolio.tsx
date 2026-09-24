@@ -122,9 +122,16 @@ export default function Portfolio() {
                       {project.desc}
                     </p>
                   </div>
-                  <span className={`shrink-0 text-[10px] font-mono px-2.5 py-1 rounded-full border ${badge.color}`}>
-                    {badge.label}
-                  </span>
+                  <div className="shrink-0 flex flex-col items-end gap-1.5">
+                    <span className={`text-[10px] font-mono px-2.5 py-1 rounded-full border ${badge.color}`}>
+                      {badge.label}
+                    </span>
+                    {project.fundingOpen && (
+                      <span className="text-[10px] font-mono px-2.5 py-1 rounded-full border text-amber-400 bg-amber-500/10 border-amber-500/20 whitespace-nowrap">
+                        Open for Funding
+                      </span>
+                    )}
+                  </div>
                 </div>
 
                 <div className="flex flex-wrap gap-1.5 relative">

@@ -8,10 +8,21 @@ export interface Project {
   days: number | string
   categories: Exclude<Category, 'all'>[]
   featured?: boolean
+  fundingOpen?: boolean
 }
 
 export const projects: Project[] = [
   // ── Ongoing (pinned to top) ──────────────────────────────────────────────
+  {
+    name: 'Cold Conflict: Tactical Warfare',
+    url: 'https://coldconflict.app/',
+    desc: 'Self-created tactical warfare browser game — edge-native full-stack build, no company, solo indie project (Feb 2026–present)',
+    tools: 'React 18, Vite, Zustand, Axios, Hono, Cloudflare Pages Functions, Cloudflare D1, Cloudflare R2, JWT (jose)',
+    days: 'Ongoing',
+    categories: ['react'],
+    featured: true,
+    fundingOpen: true,
+  },
   {
     name: 'Thailand Finds',
     url: 'https://thailandfinds.com',
