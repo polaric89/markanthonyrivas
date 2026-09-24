@@ -7,7 +7,7 @@ export default function Footer() {
           <a href="mailto:mark.anthony.rivas89@gmail.com" className="hover:text-[#00d4ff] transition-colors">
             Email
           </a>
-          <a href="https://wa.me/971589879416" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-400 transition-colors">
+          <a href="https://wa.me/66618034048" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-400 transition-colors">
             WhatsApp
           </a>
           <a href="https://github.com/polaric89" target="_blank" rel="noopener noreferrer" className="hover:text-slate-300 transition-colors">

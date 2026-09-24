@@ -144,7 +144,7 @@ export default function Contact() {
 
           {/* WhatsApp */}
           <a
-            href="https://wa.me/971589879416"
+            href="https://wa.me/66618034048"
             target="_blank"
             rel="noopener noreferrer"
             className="group flex items-center gap-3 bg-[#0d1630] border border-white/[0.06] rounded-2xl px-5 py-3 hover:border-emerald-500/25 hover:shadow-[0_0_20px_rgba(52,211,153,0.06)] transition-all duration-300"
@@ -156,7 +156,7 @@ export default function Contact() {
             </div>
             <div>
               <div className="text-[10px] text-emerald-500/60 font-mono mb-0.5">WhatsApp</div>
-              <div className="text-xs text-slate-400 group-hover:text-emerald-400 transition-colors font-mono">+971 589 879 416</div>
+              <div className="text-xs text-slate-400 group-hover:text-emerald-400 transition-colors font-mono">+66 618 034 048</div>
             </div>
           </a>
         </motion.div>
