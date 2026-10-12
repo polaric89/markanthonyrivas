@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     'Web3 Developer',
     'Blockchain Developer',
     'Node.js Developer',
-    'Dubai',
+    'Bangkok',
     'Remote Developer',
     'TypeScript',
     'Solidity',

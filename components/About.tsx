@@ -6,7 +6,7 @@ const codeLines = [
   { indent: 0, content: [{ color: 'text-purple-600', text: 'const ' }, { color: 'text-[#0ea5c0]', text: 'developer' }, { color: 'text-slate-700', text: ' = {' }] },
   { indent: 1, content: [{ color: 'text-slate-500', text: 'name:    ' }, { color: 'text-emerald-600', text: "'Mark Anthony Rivas'" }, { color: 'text-slate-400', text: ',' }] },
   { indent: 1, content: [{ color: 'text-slate-500', text: 'role:    ' }, { color: 'text-emerald-600', text: "'Senior Full-Stack Dev'" }, { color: 'text-slate-400', text: ',' }] },
-  { indent: 1, content: [{ color: 'text-slate-500', text: 'base:    ' }, { color: 'text-emerald-600', text: "'Dubai, UAE (GMT+4)'" }, { color: 'text-slate-400', text: ',' }] },
+  { indent: 1, content: [{ color: 'text-slate-500', text: 'base:    ' }, { color: 'text-emerald-600', text: "'Bangkok, Thailand (GMT+7)'" }, { color: 'text-slate-400', text: ',' }] },
   { indent: 1, content: [{ color: 'text-slate-500', text: 'exp:     ' }, { color: 'text-orange-600', text: '10' }, { color: 'text-slate-400', text: ',' }] },
   { indent: 1, content: [{ color: 'text-slate-500', text: 'stack:   ' }, { color: 'text-amber-600', text: '[' }] },
   { indent: 2, content: [{ color: 'text-emerald-600', text: "'React'" }, { color: 'text-slate-400', text: ', ' }, { color: 'text-emerald-600', text: "'Next.js'" }, { color: 'text-slate-400', text: ',' }] },
