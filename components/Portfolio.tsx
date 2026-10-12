@@ -15,27 +15,27 @@ const filters: { label: string; value: Category }[] = [
 
 const toolColor = (tool: string) => {
   const t = tool.toLowerCase()
-  if (t.includes('react native')) return 'text-pink-400 bg-pink-500/8 border-pink-500/15'
-  if (t.includes('flutter')) return 'text-sky-400 bg-sky-500/8 border-sky-500/15'
-  if (t.includes('nativescript')) return 'text-lime-400 bg-lime-500/8 border-lime-500/15'
-  if (t.includes('firebase')) return 'text-amber-400 bg-amber-500/8 border-amber-500/15'
-  if (t.includes('next') || t.includes('react')) return 'text-[#00d4ff] bg-[#00d4ff]/8 border-[#00d4ff]/15'
-  if (t.includes('solidity') || t.includes('wagmi') || t.includes('web3')) return 'text-purple-400 bg-purple-500/8 border-purple-500/15'
-  if (t.includes('typescript') || t.includes('node')) return 'text-blue-400 bg-blue-500/8 border-blue-500/15'
-  if (t.includes('tailwind')) return 'text-cyan-400 bg-cyan-500/8 border-cyan-500/15'
-  if (t.includes('shopify')) return 'text-emerald-400 bg-emerald-500/8 border-emerald-500/15'
-  if (t.includes('wordpress') || t.includes('woocommerce')) return 'text-indigo-300 bg-indigo-500/8 border-indigo-500/15'
-  if (t.includes('aws') || t.includes('docker')) return 'text-orange-400 bg-orange-500/8 border-orange-500/15'
-  if (t.includes('mssql')) return 'text-rose-400 bg-rose-500/8 border-rose-500/15'
-  if (t.includes('gohighlevel') || t.includes('highlevel')) return 'text-orange-300 bg-orange-400/8 border-orange-400/15'
-  if (t.includes('sharepoint')) return 'text-blue-300 bg-blue-400/8 border-blue-400/15'
-  return 'text-slate-400 bg-white/[0.04] border-white/[0.08]'
+  if (t.includes('react native')) return 'text-pink-600 bg-pink-500/10 border-pink-500/20'
+  if (t.includes('flutter')) return 'text-sky-600 bg-sky-500/10 border-sky-500/20'
+  if (t.includes('nativescript')) return 'text-lime-700 bg-lime-500/10 border-lime-500/20'
+  if (t.includes('firebase')) return 'text-amber-600 bg-amber-500/10 border-amber-500/20'
+  if (t.includes('next') || t.includes('react')) return 'text-[#0ea5c0] bg-[#0ea5c0]/10 border-[#0ea5c0]/20'
+  if (t.includes('solidity') || t.includes('wagmi') || t.includes('web3')) return 'text-purple-600 bg-purple-500/10 border-purple-500/20'
+  if (t.includes('typescript') || t.includes('node')) return 'text-blue-600 bg-blue-500/10 border-blue-500/20'
+  if (t.includes('tailwind')) return 'text-cyan-700 bg-cyan-500/10 border-cyan-500/20'
+  if (t.includes('shopify')) return 'text-emerald-600 bg-emerald-500/10 border-emerald-500/20'
+  if (t.includes('wordpress') || t.includes('woocommerce')) return 'text-indigo-600 bg-indigo-500/10 border-indigo-500/20'
+  if (t.includes('aws') || t.includes('docker')) return 'text-orange-600 bg-orange-500/10 border-orange-500/20'
+  if (t.includes('mssql')) return 'text-rose-600 bg-rose-500/10 border-rose-500/20'
+  if (t.includes('gohighlevel') || t.includes('highlevel')) return 'text-orange-600 bg-orange-400/10 border-orange-400/20'
+  if (t.includes('sharepoint')) return 'text-blue-600 bg-blue-400/10 border-blue-400/20'
+  return 'text-slate-600 bg-slate-900/[0.04] border-slate-900/[0.08]'
 }
 
 const getDayLabel = (days: number | string) => {
-  if (days === 'Ongoing') return { label: 'Ongoing', color: 'text-emerald-400 bg-emerald-500/10 border-emerald-500/20' }
-  if (typeof days === 'number' && days >= 180) return { label: `${days}d`, color: 'text-purple-400 bg-purple-500/10 border-purple-500/20' }
-  return { label: `${days}d`, color: 'text-slate-400 bg-white/[0.04] border-white/[0.08]' }
+  if (days === 'Ongoing') return { label: 'Ongoing', color: 'text-emerald-600 bg-emerald-500/10 border-emerald-500/20' }
+  if (typeof days === 'number' && days >= 180) return { label: `${days}d`, color: 'text-purple-600 bg-purple-500/10 border-purple-500/20' }
+  return { label: `${days}d`, color: 'text-slate-600 bg-slate-900/[0.04] border-slate-900/[0.08]' }
 }
 
 export default function Portfolio() {
@@ -48,7 +48,7 @@ export default function Portfolio() {
 
   return (
     <section id="portfolio" className="py-28 sm:py-36 relative">
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/[0.06] to-transparent" aria-hidden="true" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-slate-900/[0.06] to-transparent" aria-hidden="true" />
 
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
@@ -59,12 +59,12 @@ export default function Portfolio() {
           transition={{ duration: 0.6 }}
           className="mb-12 text-center"
         >
-          <span className="text-xs font-mono text-[#00d4ff] tracking-[0.2em] uppercase mb-4 block">
+          <span className="text-xs font-mono text-[#0ea5c0] tracking-[0.2em] uppercase mb-4 block">
             // 03 — Portfolio
           </span>
-          <h2 className="font-heading text-4xl sm:text-5xl font-bold text-white tracking-tight mb-3">
+          <h2 className="font-heading text-4xl sm:text-5xl font-bold text-slate-900 tracking-tight mb-3">
             Selected{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00d4ff] to-[#7c3aed]">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0ea5c0] to-[#7c3aed]">
               Work
             </span>
           </h2>
@@ -85,10 +85,10 @@ export default function Portfolio() {
             <button
               key={f.value}
               onClick={() => setActive(f.value)}
-              className={`relative px-4 py-2 rounded-xl text-xs font-medium transition-colors duration-150 border focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#00d4ff]/50 ${
+              className={`relative px-4 py-2 rounded-xl text-xs font-medium transition-colors duration-150 border focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0ea5c0]/50 ${
                 active === f.value
-                  ? 'bg-[#00d4ff]/10 border-[#00d4ff]/40 text-[#00d4ff] shadow-[0_0_16px_rgba(0,212,255,0.15)]'
-                  : 'border-white/[0.07] text-slate-400 hover:text-slate-200 hover:border-white/15 bg-white/[0.02]'
+                  ? 'bg-[#0ea5c0]/10 border-[#0ea5c0]/40 text-[#0ea5c0] shadow-[0_0_16px_rgba(14,165,192,0.15)]'
+                  : 'border-slate-900/[0.08] text-slate-500 hover:text-slate-800 hover:border-slate-900/20 bg-white'
               }`}
             >
               {f.label}
@@ -105,17 +105,17 @@ export default function Portfolio() {
             return (
               <div
                 key={project.name}
-                className="group relative bg-[#0d1630] rounded-2xl border border-white/[0.06] p-5 hover:border-[#00d4ff]/20 hover:shadow-[0_0_40px_rgba(0,212,255,0.06),0_16px_48px_rgba(0,0,0,0.4)] transition-[border-color,box-shadow] duration-300 flex flex-col gap-4 overflow-hidden"
+                className="group relative bg-white rounded-2xl border border-slate-900/[0.06] p-5 hover:border-[#0ea5c0]/30 hover:shadow-[0_0_40px_rgba(14,165,192,0.08),0_16px_48px_rgba(15,23,42,0.1)] transition-[border-color,box-shadow] duration-300 flex flex-col gap-4 overflow-hidden"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-[#00d4ff]/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#0ea5c0]/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl pointer-events-none" />
 
                 {project.featured && (
-                  <div className="absolute top-0 right-0 w-20 h-px bg-gradient-to-l from-[#00d4ff]/40 to-transparent" />
+                  <div className="absolute top-0 right-0 w-20 h-px bg-gradient-to-l from-[#0ea5c0]/40 to-transparent" />
                 )}
 
                 <div className="flex items-start justify-between gap-2 relative">
                   <div className="flex-1 min-w-0">
-                    <h3 className="font-heading font-semibold text-white text-base leading-tight mb-1 group-hover:text-[#00d4ff] transition-colors duration-200 truncate">
+                    <h3 className="font-heading font-semibold text-slate-900 text-base leading-tight mb-1 group-hover:text-[#0ea5c0] transition-colors duration-200 truncate">
                       {project.name}
                     </h3>
                     <p className="text-slate-500 text-xs leading-relaxed line-clamp-2">
@@ -127,7 +127,7 @@ export default function Portfolio() {
                       {badge.label}
                     </span>
                     {project.fundingOpen && (
-                      <span className="text-[10px] font-mono px-2.5 py-1 rounded-full border text-amber-400 bg-amber-500/10 border-amber-500/20 whitespace-nowrap">
+                      <span className="text-[10px] font-mono px-2.5 py-1 rounded-full border text-amber-600 bg-amber-500/10 border-amber-500/20 whitespace-nowrap">
                         Open for Funding
                       </span>
                     )}
@@ -144,16 +144,16 @@ export default function Portfolio() {
                     </span>
                   ))}
                   {project.tools.split(',').length > 3 && (
-                    <span className="text-[10px] font-mono px-2 py-1 rounded-lg border text-slate-500 bg-white/[0.03] border-white/[0.06]">
+                    <span className="text-[10px] font-mono px-2 py-1 rounded-lg border text-slate-500 bg-slate-900/[0.03] border-slate-900/[0.08]">
                       +{project.tools.split(',').length - 3}
                     </span>
                   )}
                 </div>
 
-                <div className="flex items-center justify-between relative pt-3 border-t border-white/[0.04]">
+                <div className="flex items-center justify-between relative pt-3 border-t border-slate-900/[0.05]">
                   <div className="flex gap-1">
                     {project.categories.map((cat) => (
-                      <span key={cat} className="text-[9px] uppercase tracking-wider text-slate-600 font-mono">
+                      <span key={cat} className="text-[9px] uppercase tracking-wider text-slate-400 font-mono">
                         #{cat}
                       </span>
                     ))}
@@ -162,7 +162,7 @@ export default function Portfolio() {
                     href={project.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 text-xs text-slate-500 hover:text-[#00d4ff] transition-colors duration-150 group/link font-medium"
+                    className="inline-flex items-center gap-1 text-xs text-slate-500 hover:text-[#0ea5c0] transition-colors duration-150 group/link font-medium"
                     aria-label={`View ${project.name} live site`}
                   >
                     Live
@@ -181,7 +181,7 @@ export default function Portfolio() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.3 }}
-          className="text-center text-slate-700 text-xs font-mono mt-8"
+          className="text-center text-slate-400 text-xs font-mono mt-8"
         >
           Showing {filtered.length} of {projects.length} projects
         </motion.p>

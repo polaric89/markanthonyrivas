@@ -4,9 +4,9 @@
 
 @layer base {
   :root {
-    --bg-primary: #050b18;
-    --bg-secondary: #0d1630;
-    --accent: #00d4ff;
+    --bg-primary: #f6f5fb;
+    --bg-secondary: #ffffff;
+    --accent: #0ea5c0;
   }
 
   * { box-sizing: border-box; }
@@ -14,19 +14,19 @@
   html { scroll-behavior: smooth; }
 
   body {
-    background: #050b18;
+    background: #f6f5fb;
     overflow-x: hidden;
   }
 
   ::selection {
-    background: rgba(0, 212, 255, 0.25);
-    color: #fff;
+    background: rgba(124, 58, 237, 0.18);
+    color: #15112a;
   }
 
   ::-webkit-scrollbar { width: 5px; }
-  ::-webkit-scrollbar-track { background: #050b18; }
+  ::-webkit-scrollbar-track { background: #f6f5fb; }
   ::-webkit-scrollbar-thumb {
-    background: rgba(0, 212, 255, 0.25);
+    background: rgba(124, 58, 237, 0.25);
     border-radius: 3px;
   }
 }
@@ -34,19 +34,19 @@
 @layer utilities {
   .glow-accent {
     box-shadow:
-      0 0 20px rgba(0, 212, 255, 0.35),
-      0 0 40px rgba(0, 212, 255, 0.15),
-      0 4px 24px rgba(0, 0, 0, 0.4);
+      0 0 20px rgba(14, 165, 192, 0.25),
+      0 0 40px rgba(14, 165, 192, 0.12),
+      0 4px 24px rgba(15, 23, 42, 0.12);
   }
 
   .glow-text {
-    text-shadow: 0 0 40px rgba(0, 212, 255, 0.45);
+    text-shadow: 0 0 40px rgba(14, 165, 192, 0.3);
   }
 
   .grid-bg {
     background-image:
-      linear-gradient(rgba(0, 212, 255, 0.025) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(0, 212, 255, 0.025) 1px, transparent 1px);
+      linear-gradient(rgba(124, 58, 237, 0.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(124, 58, 237, 0.035) 1px, transparent 1px);
     background-size: 72px 72px;
   }
 
@@ -61,11 +61,11 @@
   }
 
   .card-border {
-    border: 1px solid rgba(255, 255, 255, 0.06);
-    background: linear-gradient(135deg, rgba(255,255,255,0.04) 0%, transparent 100%);
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    background: linear-gradient(135deg, rgba(124,58,237,0.03) 0%, transparent 100%);
   }
 
   .timeline-dot {
-    box-shadow: 0 0 0 4px rgba(0, 212, 255, 0.15), 0 0 16px rgba(0, 212, 255, 0.4);
+    box-shadow: 0 0 0 4px rgba(14, 165, 192, 0.15), 0 0 16px rgba(14, 165, 192, 0.35);
   }
 }

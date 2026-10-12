@@ -60,15 +60,15 @@ export default function Contact() {
   }
 
   const inputBase =
-    'w-full bg-[#0a1428] border border-white/[0.08] rounded-xl px-4 py-3 text-sm text-slate-200 placeholder-slate-600 focus:outline-none focus:border-[#00d4ff]/40 focus:ring-1 focus:ring-[#00d4ff]/20 transition-all duration-200'
+    'w-full bg-slate-50 border border-slate-900/[0.08] rounded-xl px-4 py-3 text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:border-[#0ea5c0]/40 focus:ring-1 focus:ring-[#0ea5c0]/20 transition-all duration-200'
 
   return (
-    <section id="contact" className="py-28 sm:py-36 relative bg-[#080f1f]" ref={ref}>
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/[0.06] to-transparent" aria-hidden="true" />
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/[0.06] to-transparent" aria-hidden="true" />
+    <section id="contact" className="py-28 sm:py-36 relative bg-[#f0eef9]" ref={ref}>
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-slate-900/[0.06] to-transparent" aria-hidden="true" />
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-slate-900/[0.06] to-transparent" aria-hidden="true" />
 
       <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-[#00d4ff]/[0.02] rounded-full blur-[100px]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-[#0ea5c0]/[0.04] rounded-full blur-[100px]" />
       </div>
 
       <div className="max-w-5xl mx-auto px-6 relative">
@@ -79,16 +79,16 @@ export default function Contact() {
           transition={{ duration: 0.6 }}
           className="text-center mb-14"
         >
-          <span className="text-xs font-mono text-[#00d4ff] tracking-[0.2em] uppercase mb-4 block">
+          <span className="text-xs font-mono text-[#0ea5c0] tracking-[0.2em] uppercase mb-4 block">
             // 06 — Contact
           </span>
-          <h2 className="font-heading text-4xl sm:text-5xl font-bold text-white tracking-tight mb-4">
+          <h2 className="font-heading text-4xl sm:text-5xl font-bold text-slate-900 tracking-tight mb-4">
             Let&apos;s Build Something{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00d4ff] to-[#7c3aed]">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0ea5c0] to-[#7c3aed]">
               Great
             </span>
           </h2>
-          <p className="text-slate-400 text-[15px] max-w-lg mx-auto leading-relaxed">
+          <p className="text-slate-600 text-[15px] max-w-lg mx-auto leading-relaxed">
             Available for remote full-time, contract, and freelance engagements. Strong overlap
             with EU and US East timezones. Drop a proposal below.
           </p>
@@ -113,32 +113,32 @@ export default function Contact() {
           {/* Business email */}
           <a
             href="mailto:contact.me@markanthonyrivas.site"
-            className="group flex items-center gap-3 bg-[#0d1630] border border-white/[0.06] rounded-2xl px-5 py-3 hover:border-[#00d4ff]/25 hover:shadow-[0_0_20px_rgba(0,212,255,0.06)] transition-all duration-300"
+            className="group flex items-center gap-3 bg-white border border-slate-900/[0.06] rounded-2xl px-5 py-3 hover:border-[#0ea5c0]/30 hover:shadow-[0_0_20px_rgba(14,165,192,0.08)] transition-all duration-300"
           >
-            <div className="w-8 h-8 rounded-lg bg-[#00d4ff]/10 border border-[#00d4ff]/20 flex items-center justify-center shrink-0">
-              <svg className="w-4 h-4 text-[#00d4ff]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <div className="w-8 h-8 rounded-lg bg-[#0ea5c0]/10 border border-[#0ea5c0]/20 flex items-center justify-center shrink-0">
+              <svg className="w-4 h-4 text-[#0ea5c0]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
             </div>
             <div className="min-w-0">
-              <div className="text-[10px] text-[#00d4ff]/60 font-mono mb-0.5">Business</div>
-              <div className="text-xs text-slate-300 group-hover:text-[#00d4ff] transition-colors font-mono truncate">contact.me@markanthonyrivas.site</div>
+              <div className="text-[10px] text-[#0ea5c0]/70 font-mono mb-0.5">Business</div>
+              <div className="text-xs text-slate-600 group-hover:text-[#0ea5c0] transition-colors font-mono truncate">contact.me@markanthonyrivas.site</div>
             </div>
           </a>
 
           {/* Personal email */}
           <a
             href="mailto:mark.anthony.rivas89@gmail.com"
-            className="group flex items-center gap-3 bg-[#0d1630] border border-white/[0.06] rounded-2xl px-5 py-3 hover:border-slate-500/25 hover:shadow-[0_0_20px_rgba(100,116,139,0.06)] transition-all duration-300"
+            className="group flex items-center gap-3 bg-white border border-slate-900/[0.06] rounded-2xl px-5 py-3 hover:border-slate-500/30 hover:shadow-[0_0_20px_rgba(100,116,139,0.08)] transition-all duration-300"
           >
             <div className="w-8 h-8 rounded-lg bg-slate-500/10 border border-slate-500/20 flex items-center justify-center shrink-0">
-              <svg className="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <svg className="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
             </div>
             <div>
               <div className="text-[10px] text-slate-500 font-mono mb-0.5">Personal</div>
-              <div className="text-xs text-slate-400 group-hover:text-slate-200 transition-colors font-mono">mark.anthony.rivas89@gmail.com</div>
+              <div className="text-xs text-slate-600 group-hover:text-slate-900 transition-colors font-mono">mark.anthony.rivas89@gmail.com</div>
             </div>
           </a>
 
@@ -147,7 +147,7 @@ export default function Contact() {
             href="https://wa.me/66618034048"
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex items-center gap-3 bg-[#0d1630] border border-white/[0.06] rounded-2xl px-5 py-3 hover:border-emerald-500/25 hover:shadow-[0_0_20px_rgba(52,211,153,0.06)] transition-all duration-300"
+            className="group flex items-center gap-3 bg-white border border-slate-900/[0.06] rounded-2xl px-5 py-3 hover:border-emerald-500/30 hover:shadow-[0_0_20px_rgba(52,211,153,0.08)] transition-all duration-300"
           >
             <div className="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center shrink-0">
               <svg className="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -155,8 +155,8 @@ export default function Contact() {
               </svg>
             </div>
             <div>
-              <div className="text-[10px] text-emerald-500/60 font-mono mb-0.5">WhatsApp</div>
-              <div className="text-xs text-slate-400 group-hover:text-emerald-400 transition-colors font-mono">+66 618 034 048</div>
+              <div className="text-[10px] text-emerald-600/70 font-mono mb-0.5">WhatsApp</div>
+              <div className="text-xs text-slate-600 group-hover:text-emerald-600 transition-colors font-mono">+66 618 034 048</div>
             </div>
           </a>
         </motion.div>
@@ -166,12 +166,12 @@ export default function Contact() {
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="bg-[#0d1630] rounded-2xl border border-white/[0.06] p-6 sm:p-8 relative overflow-hidden"
+          className="bg-white rounded-2xl border border-slate-900/[0.06] p-6 sm:p-8 relative overflow-hidden shadow-[0_8px_32px_rgba(15,23,42,0.06)]"
         >
-          <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#00d4ff]/20 to-transparent" aria-hidden="true" />
+          <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#0ea5c0]/30 to-transparent" aria-hidden="true" />
 
           <div className="relative mb-6">
-            <h3 className="font-heading font-semibold text-white text-lg mb-1">Project Proposal</h3>
+            <h3 className="font-heading font-semibold text-slate-900 text-lg mb-1">Project Proposal</h3>
             <p className="text-slate-500 text-sm">Tell me about your project and I&apos;ll get back to you within 24 hours.</p>
           </div>
 
@@ -186,11 +186,11 @@ export default function Contact() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h4 className="font-heading font-semibold text-white text-lg mb-2">Message sent!</h4>
-              <p className="text-slate-400 text-sm mb-6">Thanks for reaching out. I&apos;ll reply to your email within 24 hours.</p>
+              <h4 className="font-heading font-semibold text-slate-900 text-lg mb-2">Message sent!</h4>
+              <p className="text-slate-500 text-sm mb-6">Thanks for reaching out. I&apos;ll reply to your email within 24 hours.</p>
               <button
                 onClick={() => setState('idle')}
-                className="text-xs text-[#00d4ff] border border-[#00d4ff]/25 px-4 py-2 rounded-lg hover:bg-[#00d4ff]/10 transition-colors"
+                className="text-xs text-[#0ea5c0] border border-[#0ea5c0]/25 px-4 py-2 rounded-lg hover:bg-[#0ea5c0]/10 transition-colors"
               >
                 Send another
               </button>
@@ -200,7 +200,7 @@ export default function Contact() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
                 <div>
                   <label className="block text-xs text-slate-500 mb-1.5 font-mono" htmlFor="cf-name">
-                    Name <span className="text-[#00d4ff]">*</span>
+                    Name <span className="text-[#0ea5c0]">*</span>
                   </label>
                   <input
                     id="cf-name"
@@ -214,7 +214,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <label className="block text-xs text-slate-500 mb-1.5 font-mono" htmlFor="cf-email">
-                    Email <span className="text-[#00d4ff]">*</span>
+                    Email <span className="text-[#0ea5c0]">*</span>
                   </label>
                   <input
                     id="cf-email"
@@ -271,7 +271,7 @@ export default function Contact() {
 
               <div className="mb-5">
                 <label className="block text-xs text-slate-500 mb-1.5 font-mono" htmlFor="cf-message">
-                  Project Details <span className="text-[#00d4ff]">*</span>
+                  Project Details <span className="text-[#0ea5c0]">*</span>
                 </label>
                 <textarea
                   id="cf-message"
@@ -286,21 +286,21 @@ export default function Contact() {
 
               {state === 'error' && (
                 <div className="mb-4 flex items-start gap-2.5 bg-rose-500/10 border border-rose-500/20 rounded-xl px-4 py-3">
-                  <svg className="w-4 h-4 text-rose-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <svg className="w-4 h-4 text-rose-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <span className="text-rose-400 text-xs">{errorMsg}</span>
+                  <span className="text-rose-600 text-xs">{errorMsg}</span>
                 </div>
               )}
 
               <div className="flex items-center justify-between gap-4 flex-wrap">
-                <p className="text-slate-600 text-xs font-mono">
+                <p className="text-slate-400 text-xs font-mono">
                   Delivered to <span className="text-slate-500">contact.me@markanthonyrivas.site</span>
                 </p>
                 <button
                   type="submit"
                   disabled={state === 'sending'}
-                  className="inline-flex items-center gap-2 px-7 py-3 rounded-xl bg-[#00d4ff] text-[#050b18] font-heading font-semibold text-sm hover:bg-[#00d4ff]/90 transition-all duration-200 glow-accent active:scale-[0.97] disabled:opacity-60 disabled:cursor-not-allowed disabled:shadow-none"
+                  className="inline-flex items-center gap-2 px-7 py-3 rounded-xl bg-[#0ea5c0] text-white font-heading font-semibold text-sm hover:bg-[#0ea5c0]/90 transition-all duration-200 glow-accent active:scale-[0.97] disabled:opacity-60 disabled:cursor-not-allowed disabled:shadow-none"
                 >
                   {state === 'sending' ? (
                     <>
@@ -329,22 +329,22 @@ export default function Contact() {
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : {}}
           transition={{ duration: 0.6, delay: 0.35 }}
-          className="mt-8 flex flex-wrap justify-center gap-6 text-xs text-slate-600"
+          className="mt-8 flex flex-wrap justify-center gap-6 text-xs text-slate-500"
         >
           <div className="flex items-center gap-1.5">
-            <svg className="w-3.5 h-3.5 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <svg className="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z" />
             </svg>
             Dubai, UAE (GMT+4)
           </div>
           <div className="flex items-center gap-1.5">
-            <svg className="w-3.5 h-3.5 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <svg className="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
             EU overlap 5–9 hrs · US East 8–11 hrs
           </div>
           <div className="flex items-center gap-1.5">
-            <svg className="w-3.5 h-3.5 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <svg className="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
             Remote · Full-Time · Contract · Freelance

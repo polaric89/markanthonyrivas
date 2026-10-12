@@ -59,7 +59,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${spaceGrotesk.variable} ${inter.variable} ${jetbrainsMono.variable} bg-[#050b18] text-slate-100 antialiased font-body`}
+        className={`${spaceGrotesk.variable} ${inter.variable} ${jetbrainsMono.variable} bg-[#f6f5fb] text-slate-900 antialiased font-body`}
       >
         {children}
       </body>
