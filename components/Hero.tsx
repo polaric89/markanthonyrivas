@@ -56,7 +56,7 @@ export default function Hero() {
           'linear-gradient(120deg, #f4f1ff 0%, #e6e2fb 20%, #c2b2f6 48%, #8f6cea 72%, #6327cf 100%)',
       }}
     >
-      <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-6 items-start pt-40 pb-20">
+      <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-6 items-start pt-40 pb-0">
         {/* Left — copy */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

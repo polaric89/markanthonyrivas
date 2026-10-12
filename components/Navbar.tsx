@@ -32,13 +32,9 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="#" className="flex items-center gap-2.5 group" aria-label="Home">
-          <div className="w-8 h-8 rounded-lg bg-[#0ea5c0]/10 border border-[#0ea5c0]/25 flex items-center justify-center text-[#0ea5c0] font-bold text-xs font-heading group-hover:bg-[#0ea5c0]/20 group-hover:border-[#0ea5c0]/50 transition-all duration-200">
-            MR
-          </div>
-          <span className="font-heading font-semibold text-slate-900 text-sm hidden sm:block tracking-wide">
-            Mark Rivas
-          </span>
+        <a href="#" className="flex items-center" aria-label="Home">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/headerlogo.png" alt="Mark Anthony Rivas" className="h-7 w-auto" />
         </a>
 
         <ul className="hidden md:flex items-center gap-7">
