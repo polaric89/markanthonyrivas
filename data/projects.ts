@@ -14,6 +14,15 @@ export interface Project {
 export const projects: Project[] = [
   // ── Ongoing (pinned to top) ──────────────────────────────────────────────
   {
+    name: 'MJE Express',
+    url: 'https://mjeexpress.com',
+    desc: 'Cargo & shipment tracking system for a Thailand → Philippines logistics business — authenticated admin dashboard plus a login-free public tracking page',
+    tools: 'Next.js, TypeScript, Tailwind CSS, shadcn/ui, Drizzle ORM, Cloudflare Workers, D1, KV, OpenNext',
+    days: 'Ongoing',
+    categories: ['react'],
+    featured: true,
+  },
+  {
     name: 'Cold Conflict: Tactical Warfare',
     url: 'https://coldconflict.app/',
     desc: 'Self-created tactical warfare browser game — edge-native full-stack build, no company, solo indie project (Feb 2026–present)',
