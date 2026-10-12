@@ -55,7 +55,7 @@ export default function Navbar() {
           <a
             href="/cv.pdf"
             download="Mark-Anthony-Rivas-CV.pdf"
-            className="text-xs px-4 py-2 rounded-lg border border-[#0ea5c0]/25 text-[#0ea5c0] hover:bg-[#0ea5c0]/10 hover:border-[#0ea5c0]/50 transition-all duration-200 font-medium tracking-wide"
+            className="text-xs px-4 py-2 rounded-full bg-white text-[#15112a] border border-slate-900/[0.08] shadow-[0_2px_10px_rgba(15,23,42,0.08)] hover:shadow-[0_4px_16px_rgba(15,23,42,0.14)] transition-all duration-200 font-semibold tracking-wide"
           >
             Download CV
           </a>
